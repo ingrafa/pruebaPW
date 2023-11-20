@@ -1,7 +1,7 @@
-<h1>Por favor para modificar una nota, primero realizar la busqueda de esta.</h1>
+<h1>Editar nota.</h1>
 <form>
     <fieldset>
-        <legend>Ingreso de usuarios y actualizacion de usuario</legend>
+        <legend>crear y actualizar usuario</legend>
 
         <label for="id">Ingresa tu id de la nota </label>
         <input type="text" name="id" id="id" [(ngModel)]="id" />
@@ -23,7 +23,7 @@
 </form>
 <form>
     <fieldset>
-        <legend>metodos especiales de busqueda y eliminacion</legend>
+        <legend> buscar y eliminar notas</legend>
         <label for="buscar">Ingresa el id de la nota a buscar</label>
         <input type="text" name="buscar" id="buscar" [(ngModel)]="buscarId">
         <button type="button" (click)="buscarNota(buscarId)">Buscar</button>
