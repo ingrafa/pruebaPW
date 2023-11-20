@@ -1,13 +1,12 @@
-# CRUD ANGULAR
-Crea una Aplicación Angular: Inicia un nuevo proyecto Angular utilizando Angular CLI.
-Configura Firebase:
-Crea un proyecto en Firebase.
-Integra Firebase en tu aplicación Angular (usar AngularFire)..
-Funcionalidad de la Aplicación:
-CRUD de Datos: Crea una interfaz que permita a los usuarios añadir, leer, actualizar. Estos datos pueden corresponde una lista de tareas o notas (nota, fecha, etiquetas).
-Interacción con la Base de Datos en Tiempo Real: Utiliza Firestore para almacenar y recuperar los datos.
-Interfaz de Usuario: Diseña una interfaz sencilla pero funcional utilizando CSS.
-Documentación:
-Escribe comentarios breves en el código para explicar la funcionalidad principal.
-Incluye un archivo README que describa brevemente el proyecto y cómo ejecutarlo.
+## Proyecto Angular con Firebase
+
+Este proyecto utiliza Angular y Firebase para crear una aplicación de gestión de tareas o notas con funcionalidad CRUD.
+
+### Cómo Ejecutar el Proyecto
+
+1. Clona el repositorio.
+2. Instala las dependencias con `npm install`.
+3. Configura tu proyecto en Firebase y actualiza las credenciales en la configuración de AngularFire.
+4. Ejecuta la aplicación con `ng serve`.
+5. Abre tu navegador y visita `http://localhost:4200/`.
 
