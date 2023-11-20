@@ -1,35 +1,34 @@
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, InjectionToken } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { PersonaComponent } from './personas/persona/persona.component';
-import { FormularioComponent } from './personas/formulario/formulario.component';
-import { LoggingService } from './LoggingService.service';
-import { PersonasService } from './personas.service';
-import { PersonasComponent } from './personas/personas.component';
-import { ErrorComponent } from './error/error.component'; 
-import { HttpClientModule } from '@angular/common/http';
-import { DataService } from './data.service';
-
+import { NavComponent } from './layouts/nav/nav.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { IndexComponent } from './pages/index/index.component';
+import { AddQualificationComponent } from './pages/agregar calificaciones/add-qualification.component';
+import { MenuComponent } from './layouts/menu/menu.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonaComponent,
-    FormularioComponent,
-    PersonasComponent,
-    ErrorComponent
+    NavComponent,
+    FooterComponent,
+    IndexComponent,
+    AddQualificationComponent,
+    MenuComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
+    CommonModule,
+    FormsModule
+    
   ],
-  providers: [LoggingService, PersonasService, DataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

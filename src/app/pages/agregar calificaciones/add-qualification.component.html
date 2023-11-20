@@ -1,0 +1,45 @@
+<h1>Por favor para modificar una nota, primero realizar la busqueda de esta.</h1>
+<form>
+    <fieldset>
+        <legend>Ingreso de usuarios y actualizacion de usuario</legend>
+
+        <label for="id">Ingresa tu id de la nota </label>
+        <input type="text" name="id" id="id" [(ngModel)]="id" />
+        <br>
+        <label for="nombre">Ingresa la nota </label>
+        <input type="number" name="nombre" id="nombre" [(ngModel)]="nota">
+        <br>
+        <label for="apellido">Ingresa la fecha </label>
+        <input type="date" name="apellido" id="apellido" [(ngModel)]="fecha">
+        <br>
+        <br>
+        <label for="apellido">Ingresa una etiqueta </label>
+        <input type="text" name="apellido" id="apellido" [(ngModel)]="etiqueta">
+        <br>
+        <button (click)="agregar(id, nota, fecha, etiqueta)"> Enviar </button>
+        <button type="button" (click)="actualizarNota()"> Actualizar Nota</button>
+        <br>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>metodos especiales de busqueda y eliminacion</legend>
+        <label for="buscar">Ingresa el id de la nota a buscar</label>
+        <input type="text" name="buscar" id="buscar" [(ngModel)]="buscarId">
+        <button type="button" (click)="buscarNota(buscarId)">Buscar</button>
+        <br>
+        <label for="eliminar">Ingresa el id de la nota a eliminar</label>
+        <input type="text" name="eliminar" id="eliminar" [(ngModel)]="eliminar">
+        <button type="button" (click)="eliminarNota(eliminar)"> Eliminar </button>
+        <br>
+    </fieldset>
+</form>
+
+<div>
+    <h2>Lista de notas</h2>
+    <ul>
+        <li *ngFor="let notas of qualification">
+            <p>Id: {{notas.id}}, Nota: {{notas.nota}}, Fecha: {{notas.fecha}}, Etiqueta: {{notas.etiqueta}} </p>
+        </li>
+    </ul>
+</div>
